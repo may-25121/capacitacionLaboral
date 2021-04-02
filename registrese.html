@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+
+    <!--Cabecera-->
+    <header id="header">
+        <div class="logotipo">
+            <img src="img/logo02.png" alt="Logotipo de la web">
+        </div>
+        <h1>
+            <a href="inicio.html">Instituto de Capacitación Laboral</a>
+        </h1>
+    </header>
+
+    <!--Menú de navegación-->
+    <nav id="nav">
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="registrese.html">Registrese</a></li>
+            <li><a href="#">Nosotros</a></li>
+        </ul>
+    </nav>
+
+    <!--Contenido Principal - Formulario-->
+    <main id="sections">
+        <h2 class="titulo">Llena el formulario de contacto</h2>
+        <div class="contenidoform">
+            <div class="textoform">
+                <h3>Información</h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+            <form action="" method="POST">
+                <div class="contenido">
+                    <legend class="titulo">Información Personal</legend><hr><br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" placeholder="Tu Apellido">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Tu Nombre">
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="telefono" placeholder="Tu celular">
+                    <label for="compania">Compañía:</label>
+                    <select id="compania" name="compania">
+                        <option value="claro">Claro</option>
+                        <option value="personal">Personal</option>
+                        <option value="movistar">Movistar</option>
+                    </select>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="Tu Email">
+                    <label for="genero">Genero:</label>
+                    <div class="generos">
+                        <input type="radio" id="femenino" name="genero" value="femenino">
+                        <label class="formato" for="femenino">Femenino</label>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label class="formato" for="femenino">Masculino</label>
+                    </div>
+                    <label for="nacimiento">Nacimiento:</label>
+                    <input type="date" id="nacimiento">
+                    <label for="dispositivo">Dispositivo que dispone:</label>
+                    <div class="opciones">
+                        <input  type="checkbox" id="pc" name="dispositivo" value="pc">
+                        <label class="formato" for="pc">PC</label>
+                        <input type="checkbox" id="notebook" name="dispositivo" value="notebook">
+                        <label class="formato" for="notebook">Notebook</label>
+                        <input type="checkbox" id="cel" name="dispositivo" value="cel">
+                        <label class="formato" for="cel">Celular</label>
+                    </div>
+                </div>
+                
+                <input class="btn" type="submit" value="Enviar">
+               
+            </form>
+        </div>
+    </main>
+
+    <!--Pie de página-->
+    <footer id="footer">
+        <p>&copy; Desarrollado por Marisel Anahi Yapura WEB</p>
+    </footer>
 </body>
+
 </html>
