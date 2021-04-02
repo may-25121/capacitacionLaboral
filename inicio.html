@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,49 +11,89 @@
 </head>
 
 <body>
-    <header>
-        <img src="img/logo3.png" alt="">
-        <h1>Instituto de Capacitación Laboral</h1>
+    <!--Cabecera-->
+    <header id="header">
+        <div class="logotipo">
+            <img src="img/logo02.png" alt="Logotipo de la web">
+        </div>
+        <h1>
+            <a href="inicio.html">Instituto de Capacitación Laboral</a>
+        </h1>
     </header>
-    <nav>
+
+    <!--Menú de navegación-->
+    <nav id="nav">
         <ul>
             <li><a href="inicio.html">Inicio</a></li>
             <li><a href="registrese.html">Registrese</a></li>
             <li><a href="galeria.html">Galeria</a></li>
         </ul>
     </nav>
-    <main>
-        <h2>Capacitaciones Laborales disponibles 2021</h2>
-        <section>
-            <img src="img/secretariado-administrativo.jpg" alt="">
-            <div>
-                <h3>Secretariado Administrativo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga, minus commodi architecto
-                    exercitationem facilis autem iure facere! Repellendus rem doloribus corporis non necessitatibus fuga
+
+    <!---->
+    <main id="sections">
+        <h2 class="titulo">Capacitaciones Laborales disponibles 2021</h2>
+
+        <section class="section">
+            <span class="stickers">
+                <img class="stickerOne" src="img/scotch.png" alt="Pegatina">
+                <img class="stickerTwo" src="img/scotch.png" alt="Pegatina">
+            </span>
+            <img class="img" src="img/secretariado-administrativo.jpg" alt="">
+            <div class="contenido">
+                <h3 class="titulo">Secretariado Administrativo</h3>
+                <hr>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga, minus commodi architecto
+                    exercitationem facilis autem iure facere! Repellendus rem doloribus corporis non necessitatibus
+                    fuga
                     reiciendis eius nisi voluptate dolores!</p>
+                <div class="btn">
+                    <a href="">Ver más</a>
+                </div>
             </div>
         </section>
-        <section>
-            <img src="img/auxiliar-de-farmacia.jpg" alt="">
-            <div>
-                <h3>Asistente de Farmacia</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga, minus commodi architecto
-                    exercitationem facilis autem iure facere! Repellendus rem doloribus corporis non necessitatibus fuga
+       
+
+        <section class="section">
+            <span class="stickers">
+                <img class="stickerOne" src="img/scotch.png" alt="Pegatina">
+                <img class="stickerTwo" src="img/scotch.png" alt="Pegatina">
+            </span>
+            <img class="img" src="img/auxiliar-de-farmacia.jpg" alt="">
+            <div class="contenido">
+                <h3 class="titulo">Asistente de Farmacia</h3>
+                <hr>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga, minus commodi architecto
+                    exercitationem facilis autem iure facere! Repellendus rem doloribus corporis non necessitatibus
+                    fuga
                     reiciendis eius nisi voluptate dolores!</p>
+                <div class="btn">
+                    <a href="">Ver más</a>
+                </div>
             </div>
         </section>
-        <section>
-            <img src="img/secretariado-medico.jpg" alt="">
-            <div>
-                <h3>Secretariado Medico</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga, minus commodi architecto
-                    exercitationem facilis autem iure facere! Repellendus rem doloribus corporis non necessitatibus fuga
+
+        <section class="section">
+            <span class="stickers">
+                <img class="stickerOne" src="img/scotch.png" alt="Pegatina">
+                <img class="stickerTwo" src="img/scotch.png" alt="Pegatina">
+            </span>
+            <img class="img" src="img/secretariado-medico.jpg" alt="">
+            <div class="contenido">
+                <h3 class="titulo">Secretariado Medico</h3>
+                <hr>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga, minus commodi architecto
+                    exercitationem facilis autem iure facere! Repellendus rem doloribus corporis non necessitatibus
+                    fuga
                     reiciendis eius nisi voluptate dolores!</p>
+                <div class="btn">
+                    <a href="">Ver más</a>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Todos los derechos reservados Marisel Anahi Yapura</p>
+    <footer id="footer">
+        <p>&copy; Desarrollado por Marisel Anahi Yapura WEB</p>
     </footer>
 </body>
 

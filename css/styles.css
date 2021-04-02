@@ -1,0 +1,184 @@
+/*Fuentes*/
+
+/*Estilos generales*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url("../img/paven.png");
+    min-width: 1600px;
+}
+
+/*Paleta de colores*/
+:root{
+    --azul: #408cf0e8;
+    --oscuro: #333333;
+    --grisclaro:#cccccccc;
+}
+
+/*Cabecera*/
+#header{
+  
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+
+#header .logotipo img{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 10px;
+    width: 140px;
+}
+
+#header h1{
+    text-align: center;
+    font-size: 40px;
+    color: var(--azul);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px var(--oscuro);
+    transition: all 300ms;
+}
+
+#header h1:hover{
+    text-shadow: 0px 2px 1px var(--oscuro), 0px 0px 4px var(--azul);
+}
+
+#header a{
+    text-decoration: none;
+    color: var(--azul);
+}
+
+/*Barra de navegación*/
+#nav{
+    width: 100%;
+    height: 40px;
+    background-color: var(--oscuro);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+    
+}
+
+#nav ul{
+    list-style: none;
+    margin: 0px auto;
+    width: 460px;
+}
+
+#nav li{
+    line-height: 40px;
+    float: left;
+    border-right:  1px solid gray; 
+    transition: all 300ms;
+}
+
+#nav a{
+    display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+#nav a:first-child{
+    border-left: 1px solid gray;
+}
+
+#nav li:hover {
+    background-color: var(--azul);
+    box-shadow: 0px 0px 4px blue;
+}
+
+/*Secciones*/
+#sections{
+    text-align: center;
+}
+
+#sections .titulo{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.section{
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    background-color: white;
+    padding: 30px 70px;
+    margin: 20px;
+    border: 1px solid var(--grisclaro);
+    text-align: left;
+
+}
+.section hr{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.section .img{
+    float: left;
+    height: 200px;
+    width: 230px;
+    margin-top: 17px;
+    margin-right: 50px;
+    border-radius: 50%;
+}
+
+.section .titulo{
+    font-size: 17px;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+}
+
+.contenido .btn{
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+.contenido .btn a{
+    color: white;
+    text-decoration: none;
+    background-color: var(--azul);
+    background-image: linear-gradient(to bottom , var(--azul), rgba(34, 33, 56, 0.589));
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.contenido .btn a:hover{
+    opacity: 0.7;
+    color: var(--oscuro);
+}
+
+.section .stickerOne,
+.section .stickerTwo{
+    position: absolute;
+    margin-top: -48px;
+    z-index: 0;
+}
+
+.section .stickerTwo{
+    margin-left: 750px;
+}
+
+/*Pie de pagina*/
+#footer{
+    width: 100%;
+    margin:  0px auto;
+    text-align: center;
+    margin-top: 30px;
+    background-color: var(--oscuro);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
