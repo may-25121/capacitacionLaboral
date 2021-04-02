@@ -109,6 +109,7 @@ body{
     margin-top: 30px;
     margin-bottom: 10px;
     color: rgb(131, 131, 131);
+    font-size: 30px;
 }
 
 .section{
@@ -129,15 +130,15 @@ body{
 
 .section .img{
     float: left;
-    height: 200px;
-    width: 230px;
+    height: 230px;
+    width: 250px;
     margin-top: 17px;
     margin-right: 50px;
     border-radius: 50%;
 }
 
 .section .titulo{
-    font-size: 17px;
+    font-size: 20px !important;
     letter-spacing: 3px;
     padding-bottom: 10px;
     color: rgba(57, 128, 124, 0.87) !important;
@@ -148,6 +149,7 @@ body{
     margin: 20px;
     padding: 20px;
 }
+
 .contenido .btn a{
     color: white;
     text-decoration: none;
@@ -178,50 +180,68 @@ body{
     width: 70%;
     display: inline-flex;
     justify-content: space-evenly;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
+
 .textoform{
     width: 500px;
-    height: 200px;
+    height: 250px;
     background-color: white;
-    border: 2px solid var(--grisclaro);
-    background-image: linear-gradient(to bottom , rgba(140, 140, 163, 0.384), rgba(89, 153, 190, 0.411));
+    border: 1px solid var(--grisclaro);
+    background-image: linear-gradient(to bottom , rgba(140, 140, 163, 0.384), rgba(89, 153, 190, 0.308));
     text-align: center;
     padding: 30px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
     
 }
+
 .textoform h3{
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 10px;
-    color:rgb(72, 95, 109);
+    color: rgba(57, 128, 124, 0.87);
+    letter-spacing: 3px;
 }
+
+.informacion{
+    position: absolute;
+    top: 10%;
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+}
+
 form{
     background-color: white;
-    border: 2px solid var(--grisclaro);
+    border: 1px solid var(--grisclaro);
     width: 500px;
     text-align: start;
     margin-left: 40px;
-
 }
+
 legend{
-    font-size: 20px;
+    font-size: 20px !important;
     text-align: center;
     color: rgba(5, 15, 41, 0.705)!important;
     font-weight: bold;
 }
+
 label{
-    font-weight: 600;
+    font-weight: 550;
     text-transform: uppercase;
     display: block;  
     padding: 10px 0px;
+    color: rgba(15, 11, 11, 0.788);
 }
+
 .contenido{
-    margin: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 25px;
 }
+
 hr{
     margin-top: 20px;
 }
@@ -240,27 +260,94 @@ input:not([type="submit"], [type="checkbox"], [type="radio"]),select{
 input[type="radio"],[type="checkbox"]{
     width: auto;
 }
+
 .formato{
     padding: 5px 0px;
     width: 93%;
     display: inline-block;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 form .btn{
-    width: 100px;
+    width: 200px;
     height: 40px;
-    margin-left: 40% ;
+    margin-left: 30% ;
     margin-right: auto;
     margin-bottom: 30px;
     color: white;
-    background-image: linear-gradient(to bottom , rgba(87, 87, 121, 0.938), rgba(42, 124, 172, 0.651));
+    background-image: linear-gradient(to bottom , rgba(87, 87, 121, 0.651), rgba(42, 124, 172, 0.651));
+
     border-radius: 10px;
     font-weight: bold;
 }
 
+/*Slider*/
+.container{
+    margin: auto;
+    background-color: rgba(148, 153, 175, 0.253);
+    width: 1163px;
+    padding: 50px;
+    border: 1px solid var(--grisclaro);
+}
 
+.container ul, .container li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 1163px;
+    height: 500px;
+}
+
+ul.slider li{
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(255, 255, 255, 0.432);
+    transition: opacity .5s;
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child{
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
 
 /*Pie de página*/
 #footer{
