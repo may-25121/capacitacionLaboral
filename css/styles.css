@@ -100,6 +100,7 @@ body{
 /*Cursos*/
 #sections{
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #sections .titulo{
@@ -254,7 +255,7 @@ input:not([type="submit"], [type="checkbox"], [type="radio"]),select{
     width: 95%;
     background-color: #bdb9b994;
     border: none;
-    border-radius: 1rem;
+    
 }
 
 input[type="radio"],[type="checkbox"]{
@@ -285,6 +286,7 @@ form .btn{
 /*Slider*/
 .container{
     margin: auto;
+    margin:  20px auto;
     background-color: rgba(148, 153, 175, 0.253);
     width: 1163px;
     padding: 50px;
@@ -354,9 +356,9 @@ ul.slider li:target{
     width: 100%;
     margin:  0px auto;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 0px;
     background-color: var(--oscuro);
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 15px;
     color: white;
     font-family: sans-serif;
